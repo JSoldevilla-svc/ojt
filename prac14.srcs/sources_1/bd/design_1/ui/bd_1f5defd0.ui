@@ -1,0 +1,32 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.634877",
+   "Default View_TopLeft":"-526,3",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.5.8 2022-09-21 7111 VDI=41 GEI=38 GUI=JA:10.0
+#  -string -flagsOSRD
+preplace portBus sel -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace portBus Win -pg 1 -lvl 0 -x 0 -y 230 -defaultsOSRD
+preplace portBus zout_0 -pg 1 -lvl 4 -x 610 -y 290 -defaultsOSRD
+preplace inst mux41_0 -pg 1 -lvl 2 -x 330 -y 100 -defaultsOSRD
+preplace inst mux41_1 -pg 1 -lvl 2 -x 330 -y 280 -defaultsOSRD
+preplace inst mux41_2 -pg 1 -lvl 2 -x 330 -y 460 -defaultsOSRD
+preplace inst mux41_3 -pg 1 -lvl 2 -x 330 -y 640 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 3 -x 500 -y 290 -defaultsOSRD
+preplace inst hier_0 -pg 1 -lvl 1 -x 120 -y 230 -defaultsOSRD
+preplace netloc sel_1 1 0 2 NJ 140 220
+preplace netloc Win_1 1 0 1 NJ 230
+preplace netloc xlconcat_0_dout 1 3 1 N 290
+preplace netloc mux41_0_y 1 2 1 400 100n
+preplace netloc mux41_1_y 1 2 1 N 280
+preplace netloc mux41_2_y 1 2 1 400 300n
+preplace netloc mux41_3_y 1 2 1 410 320n
+preplace netloc xlslice_0_Dout 1 1 1 240 60n
+preplace netloc xlslice_1_Dout 1 1 1 260 80n
+preplace netloc xlslice_2_Dout 1 1 1 250 100n
+preplace netloc xlslice_3_Dout 1 1 1 230 120n
+levelinfo -pg 1 0 120 330 500 610
+pagesize -pg 1 -db -bbox -sgen -110 0 730 740
+"
+}
+

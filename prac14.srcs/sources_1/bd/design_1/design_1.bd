@@ -1,0 +1,304 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x51B7A54E51A26F69",
+      "device": "xc7a200tfbg676-2",
+      "gen_directory": "../../../../prac14.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "mux41_0": "",
+      "mux41_1": "",
+      "mux41_2": "",
+      "mux41_3": "",
+      "xlconcat_0": "",
+      "hier_0": {
+        "xlslice_0": "",
+        "xlslice_1": "",
+        "xlslice_2": "",
+        "xlslice_3": ""
+      }
+    },
+    "ports": {
+      "sel": {
+        "direction": "I",
+        "left": "1",
+        "right": "0"
+      },
+      "Win": {
+        "direction": "I",
+        "left": "3",
+        "right": "0"
+      },
+      "zout_0": {
+        "direction": "O",
+        "left": "3",
+        "right": "0",
+        "parameters": {
+          "PortWidth": {
+            "value": "4",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "mux41_0": {
+        "vlnv": "xilinx.com:user:mux41:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_mux41_0_0",
+        "xci_path": "ip\\design_1_mux41_0_0\\design_1_mux41_0_0.xci",
+        "inst_hier_path": "mux41_0"
+      },
+      "mux41_1": {
+        "vlnv": "xilinx.com:user:mux41:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_mux41_0_1",
+        "xci_path": "ip\\design_1_mux41_0_1\\design_1_mux41_0_1.xci",
+        "inst_hier_path": "mux41_1"
+      },
+      "mux41_2": {
+        "vlnv": "xilinx.com:user:mux41:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_mux41_0_2",
+        "xci_path": "ip\\design_1_mux41_0_2\\design_1_mux41_0_2.xci",
+        "inst_hier_path": "mux41_2"
+      },
+      "mux41_3": {
+        "vlnv": "xilinx.com:user:mux41:1.0",
+        "ip_revision": "2",
+        "xci_name": "design_1_mux41_0_3",
+        "xci_path": "ip\\design_1_mux41_0_3\\design_1_mux41_0_3.xci",
+        "inst_hier_path": "mux41_3"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "ip_revision": "5",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0",
+        "parameters": {
+          "NUM_PORTS": {
+            "value": "4"
+          }
+        }
+      },
+      "hier_0": {
+        "ports": {
+          "Win": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "Dout": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout1": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout2": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "Dout3": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "3",
+            "xci_name": "design_1_xlslice_0_0",
+            "xci_path": "ip\\design_1_xlslice_0_0\\design_1_xlslice_0_0.xci",
+            "inst_hier_path": "hier_0/xlslice_0",
+            "parameters": {
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "3",
+            "xci_name": "design_1_xlslice_0_1",
+            "xci_path": "ip\\design_1_xlslice_0_1\\design_1_xlslice_0_1.xci",
+            "inst_hier_path": "hier_0/xlslice_1",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "1"
+              },
+              "DIN_TO": {
+                "value": "1"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlslice_2": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "3",
+            "xci_name": "design_1_xlslice_0_2",
+            "xci_path": "ip\\design_1_xlslice_0_2\\design_1_xlslice_0_2.xci",
+            "inst_hier_path": "hier_0/xlslice_2",
+            "parameters": {
+              "DIN_TO": {
+                "value": "2"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          },
+          "xlslice_3": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "ip_revision": "3",
+            "xci_name": "design_1_xlslice_0_3",
+            "xci_path": "ip\\design_1_xlslice_0_3\\design_1_xlslice_0_3.xci",
+            "inst_hier_path": "hier_0/xlslice_3",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "3"
+              },
+              "DIN_TO": {
+                "value": "3"
+              },
+              "DIN_WIDTH": {
+                "value": "4"
+              }
+            }
+          }
+        },
+        "nets": {
+          "Win_1": {
+            "ports": [
+              "Win",
+              "xlslice_1/Din",
+              "xlslice_2/Din",
+              "xlslice_3/Din",
+              "xlslice_0/Din"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "Dout"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "Dout1"
+            ]
+          },
+          "xlslice_2_Dout": {
+            "ports": [
+              "xlslice_2/Dout",
+              "Dout2"
+            ]
+          },
+          "xlslice_3_Dout": {
+            "ports": [
+              "xlslice_3/Dout",
+              "Dout3"
+            ]
+          }
+        }
+      }
+    },
+    "nets": {
+      "Win_1": {
+        "ports": [
+          "Win",
+          "hier_0/Win"
+        ]
+      },
+      "mux41_0_y": {
+        "ports": [
+          "mux41_0/y",
+          "xlconcat_0/In0"
+        ]
+      },
+      "mux41_1_y": {
+        "ports": [
+          "mux41_1/y",
+          "xlconcat_0/In1"
+        ]
+      },
+      "mux41_2_y": {
+        "ports": [
+          "mux41_2/y",
+          "xlconcat_0/In2"
+        ]
+      },
+      "mux41_3_y": {
+        "ports": [
+          "mux41_3/y",
+          "xlconcat_0/In3"
+        ]
+      },
+      "sel_1": {
+        "ports": [
+          "sel",
+          "mux41_0/sel",
+          "mux41_1/sel",
+          "mux41_2/sel",
+          "mux41_3/sel"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "zout_0"
+        ]
+      },
+      "xlslice_0_Dout": {
+        "ports": [
+          "hier_0/Dout",
+          "mux41_0/a",
+          "mux41_1/d",
+          "mux41_2/c",
+          "mux41_3/b"
+        ]
+      },
+      "xlslice_1_Dout": {
+        "ports": [
+          "hier_0/Dout1",
+          "mux41_1/a",
+          "mux41_0/b",
+          "mux41_2/d",
+          "mux41_3/c"
+        ]
+      },
+      "xlslice_2_Dout": {
+        "ports": [
+          "hier_0/Dout2",
+          "mux41_2/a",
+          "mux41_3/d",
+          "mux41_1/b",
+          "mux41_0/c"
+        ]
+      },
+      "xlslice_3_Dout": {
+        "ports": [
+          "hier_0/Dout3",
+          "mux41_3/a",
+          "mux41_2/b",
+          "mux41_1/c",
+          "mux41_0/d"
+        ]
+      }
+    }
+  }
+}
